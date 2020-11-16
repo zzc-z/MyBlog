@@ -26,7 +26,7 @@ index.getInitialProps = async () => {
       resolve(res.data);
     });
   });
-  return await promise ;
+  return await promise;
 };
 
 export default index;
