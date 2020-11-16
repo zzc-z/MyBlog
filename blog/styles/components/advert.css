@@ -1,0 +1,13 @@
+.ad{
+    margin-top: .5rem;
+    background-color: #eee;
+    border-radius: 10px;
+}
+.ad div{
+    border-radius: .3rem;
+    margin-bottom: .8rem;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    height: 200px;
+}

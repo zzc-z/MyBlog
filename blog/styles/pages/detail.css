@@ -1,0 +1,162 @@
+.bread-div {
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+  background-color: #d89eab;
+}
+
+.bread-div a:hover {
+  color: white;
+}
+
+.detailed-title {
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.detailed-content {
+  padding: 1.3rem;
+  font-size: 1rem;
+}
+
+pre {
+  display: block;
+  background-color: #f3f3f3;
+  padding: .5rem !important;
+  overflow-y: auto;
+  font-weight: 300;
+  font-family: Menlo, monospace;
+  border-radius: .3rem;
+}
+
+pre {
+  background-color: #283646 !important;
+}
+
+pre>code {
+  border: 0px !important;
+  background-color: #283646 !important;
+  color: #FFF;
+}
+
+code {
+  display: inline-block;
+  background-color: #f3f3f3;
+  border: 1px solid #fdb9cc;
+  border-radius: 3px;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #4f4f4f;
+  margin: 0px 3px;
+}
+
+iframe {
+  height: 34rem;
+}
+
+.comm-lefts {
+  background-color: #fff;
+  border-radius: 0.6rem;
+  border: 1px solid #eee;
+}
+
+.comm-rights {
+  width: 280px;
+  margin-left: 3.5rem;
+  border-radius: 1rem;
+}
+
+.comm-rights .entry {
+  display: flex;
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+
+.comm-rights .entry h3 {
+  border-bottom: 1px solid #c75556;
+  text-align: center;
+}
+
+.comm-mains {
+  margin-top: 4rem;
+}
+
+.list-icon {
+  display: flex;
+  height: 4rem;
+  padding: 0.5rem 0;
+  color: #aaa;
+}
+
+.list-icon .anticon {
+  width: 20px;
+}
+
+.list-icon p {
+  flex: auto;
+  width: 35px;
+  padding: 0 10px;
+  float: left;
+}
+
+.markdown-navigation {
+  font-size: 12px;
+}
+
+.title-anchor {
+  color: #888 !important;
+  padding: 4px !important;
+  margin: 0rem !important;
+  height: auto !important;
+  line-height: 1.2rem !important;
+  font-size: .9rem !important;
+  border-bottom: 1px dashed #eee;
+}
+
+.active {
+  color: rgb(196, 95, 116, 1) !important;
+}
+
+.ant-anchor-link-active>.ant-anchor-link-title {
+  color: rgb(196, 95, 116, 1);
+}
+
+.ant-anchor-link a:hover {
+  color: rgb(196, 95, 116, 1);
+}
+
+.ant-anchor-ink {
+  margin-left: -130px;
+  height: 100%;
+  float: left;
+}
+
+.ant-anchor-ink-ball {
+  position: absolute;
+  left: 50%;
+  display: none;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border: 2px solid #c75556;
+  border-radius: 8px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: top 0.3s ease-in-out;
+  transition: top 0.3s ease-in-out;
+}
+
+.ant-anchor-wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.centerContext {
+  width: 100%;
+}

@@ -1,0 +1,67 @@
+.textbox {
+  width: 94%;
+  height: 83%;
+  position: relative;
+}
+
+.details {
+  height: 4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.bottoms{
+  width: 100%;
+  height: 50px;
+  line-height: 95px;
+}
+
+.bottoms .date {
+  width: 50%;
+  float: left;
+}
+
+.bottoms .label {
+  width: 50%;
+  float: left;
+  /* position: absolute;
+  bottom: 0;
+  right: 0; */
+}
+.bottoms .label span{
+  padding-left: 65%;
+}
+
+.cards {
+  margin-bottom: 30px;
+}
+
+.contents {
+  border-radius: 0.8rem;
+  background-color: #ffffff;
+  height: 13rem;
+  transition: opacity 0.3s ease-out 0s, transform 0.3s ease-out 0s,
+    box-shadow 0.3s ease-in-out 0s;
+  opacity: 1;
+  transform-origin: center top;
+  position: relative;
+  top: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05), 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.contents a {
+  transition: all 0.15s;
+}
+
+.contents a:hover {
+  color: #ea84a0;
+}
+
+.contents:hover {
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.2);
+}
