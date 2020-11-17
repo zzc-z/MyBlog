@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/components/header.css";
 import { Row, Col, Menu, Icon } from "antd";
-import Link from 'next/Link'
+import Link from "next/Link";
 
 const { SubMenu } = Menu;
 
@@ -27,10 +27,14 @@ class Header extends React.Component {
                   </Link>
                 </li>
                 <li>
-                  <a>收藏</a>
+                  <Link href={{ pathname: "/favorites" }}>
+                    <a>收藏</a>
+                  </Link>
                 </li>
                 <li>
-                  <a>生活</a>
+                  <Link href={{ pathname: "/life" }}>
+                    <a>生活</a>
+                  </Link>
                 </li>
                 <li>
                   <a>主题</a>
