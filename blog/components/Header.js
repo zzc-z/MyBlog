@@ -1,29 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/components/header.css";
 import { Row, Col, Menu, Icon } from "antd";
 import Link from "next/Link";
 
 const { SubMenu } = Menu;
 
-class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const Header = () => {
+  handleClick = (e) => {
+    // console.log("click ", e);
+    // this.setState({
+    //   current: e.key,
+    // });
+  };
 
-  render() {
-    return (
-      <div className="header">
-        <Row style={{ height: "100%" }}>
-          <Col className="left" flex={1.5}>
-            <img className="imgs" src="/static/qqq.png" alt="my image" />
-          </Col>
-          <Col className="right" flex={3.5}>
-            <div className="rightnva">
-              <ul className="tags">
+  return (
+    <div className="header">
+      <Row style={{ height: "100%" }}>
+        <Col span="8">
+          <img className="imgs" src="/static/qqq.png" alt="my image" />
+        </Col>
+        <Col style={{ backgroundColor: "red" }} span="16">
+          {/* <ul className="tags">
                 <li>
                   <Link href={{ pathname: "/" }}>
-                    <a>首页</a>
+                    <a>
+                      <Icon type="home" style={{ marginLeft: "0" }} />
+                      <span>首页</span>
+                    </a>
                   </Link>
                 </li>
                 <li>
@@ -39,28 +42,21 @@ class Header extends React.Component {
                 <li>
                   <a>主题</a>
                 </li>
-              </ul>
-              {/* <div className="tags">
-                <Menu
-                  mode="horizontal"
-                >
-                  <Menu.Item key="alipay">
-                    <a
-                      href="https://ant.design"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Navigation Four - Link
-                    </a>
-                  </Menu.Item>
-                </Menu>
-              </div> */}
-            </div>
-          </Col>
-        </Row>
-      </div>
-    );
-  }
-}
+              </ul> */}
+          <Menu onClick={handleClick} mode="horizontal">
+            <Menu.Item key="mail">
+              <Icon type="mail" />
+              Navigation One
+            </Menu.Item>
+            <Menu.Item key="alipay">
+              <Icon type="mail" />
+              Navigation Four - Link
+            </Menu.Item>
+          </Menu>
+        </Col>
+      </Row>
+    </div>
+  );
+};
 
 export default Header;
