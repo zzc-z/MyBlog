@@ -6,51 +6,32 @@ import Link from "next/Link";
 const { SubMenu } = Menu;
 
 const Header = () => {
-  handleClick = (e) => {
-    // console.log("click ", e);
-    // this.setState({
-    //   current: e.key,
-    // });
-  };
-
   return (
     <div className="header">
-      <Row style={{ height: "100%" }}>
-        <Col span="8">
-          <img className="imgs" src="/static/qqq.png" alt="my image" />
+      <Row align='middle'>
+        <Col
+          span="8"
+          style={{ fontSize: "36px", color: "white", lineHeight: "3.6rem" }}
+        >
+          Next~~~
         </Col>
-        <Col style={{ backgroundColor: "red" }} span="16">
-          {/* <ul className="tags">
-                <li>
-                  <Link href={{ pathname: "/" }}>
-                    <a>
-                      <Icon type="home" style={{ marginLeft: "0" }} />
-                      <span>首页</span>
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={{ pathname: "/favorites" }}>
-                    <a>收藏</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href={{ pathname: "/life" }}>
-                    <a>生活</a>
-                  </Link>
-                </li>
-                <li>
-                  <a>主题</a>
-                </li>
-              </ul> */}
-          <Menu onClick={handleClick} mode="horizontal">
-            <Menu.Item key="mail">
-              <Icon type="mail" />
-              Navigation One
+        <Col span="16">
+          <Menu mode="horizontal" style={{ float: "right" }}>
+            <Menu.Item key="home">
+              <Icon type="home" />
+              首页
             </Menu.Item>
-            <Menu.Item key="alipay">
-              <Icon type="mail" />
-              Navigation Four - Link
+            <Menu.Item key="heart">
+              <Icon type="heart" />
+              收藏
+            </Menu.Item>
+            <Menu.Item key="smile">
+              <Icon type="smile" />
+              生活
+            </Menu.Item>
+            <Menu.Item key="mail">
+              <Icon type="skin" />
+              主题
             </Menu.Item>
           </Menu>
         </Col>
