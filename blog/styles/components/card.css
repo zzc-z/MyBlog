@@ -20,7 +20,6 @@ body {
   margin-bottom: 25px;
   overflow-y: auto;
   position: relative;
-  z-index: 1;
   overflow-x: hidden;
   background-color: white;
   display: -webkit-box;
@@ -332,7 +331,6 @@ body {
   padding-left: 60px;
   padding-right: 20px;
   padding-bottom: 30px;
-  z-index: 1;
 }
 .card-item:last-child {
   padding-bottom: 5px;
