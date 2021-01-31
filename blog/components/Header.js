@@ -8,14 +8,14 @@ const { SubMenu } = Menu;
 const Header = () => {
   return (
     <div className="header">
-      <Row align='middle'>
+      <Row align="middle">
         <Col
-          span="8"
+          span={8}
           style={{ fontSize: "36px", color: "white", lineHeight: "3.6rem" }}
         >
           Next~~~
         </Col>
-        <Col span="16">
+        <Col span={16}>
           <Menu mode="horizontal" style={{ float: "right" }}>
             <Menu.Item key="home">
               <Icon type="home" />
