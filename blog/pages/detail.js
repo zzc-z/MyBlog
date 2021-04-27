@@ -55,24 +55,23 @@ const detail = (props) => {
                 <Breadcrumb.Item>
                   <a href="/">首页</a>
                 </Breadcrumb.Item>
-                <Breadcrumb.Item>视频列表</Breadcrumb.Item>
-                <Breadcrumb.Item>xxxx</Breadcrumb.Item>
+                <Breadcrumb.Item>详细内容</Breadcrumb.Item>
               </Breadcrumb>
             </div>
 
             <div>
-              <div className="detailed-title">文章内容</div>
+              <div className="detailed-title">{props.title}</div>
               <div className="list-icon center">
                 <p>
-                  <CalendarTwoTone />
+                  {/* <CalendarTwoTone /> */}
                   2020-09-02
                 </p>
                 <p>
-                  <FireTwoTone />
+                  {/* <FireTwoTone /> */}
                   100万人
                 </p>
                 <p>
-                  <StarTwoTone />
+                  {/* <StarTwoTone /> */}
                   收藏
                 </p>
               </div>
@@ -89,7 +88,7 @@ const detail = (props) => {
           <Affix offsetTop={60}>
             <div className="entry">
               <div className="centerContext">
-                <h3>文章目录</h3>
+                <h3 style={{ marginTop: "15px" }}>文章目录</h3>
                 {tocify && tocify.render()}
               </div>
             </div>

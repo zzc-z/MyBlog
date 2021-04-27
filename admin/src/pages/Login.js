@@ -38,9 +38,10 @@ function Login(props) {
       withCredentials: true,
     }).then((res) => {
       setIsLoading(false);
+      console.log(res,"res");
       if (res.data.data === "登录成功") {
         localStorage.setItem("openId", res.data.openId);
-        props.history.push("index");
+        props.history.push("/index");
       } else {
         message.error("用户名密码错误");
       }

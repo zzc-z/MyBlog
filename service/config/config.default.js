@@ -47,14 +47,22 @@ module.exports = (appInfo) => {
   //跨域设置
   config.security = {
     csrf: { enable: false },
-    domainWhiteList: [ '*' ]
+    domainWhiteList: ["*"],
   };
 
   config.cors = {
-    origin: 'http://localhost:3000',
-    credentials: true, //允许Cook可以跨域
-    allowMethods: "GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS",
+    credentials: true,  // 允许Cook可以跨域
+    origin: 'http://localhost:3000', //只允许这个域进行访问接口
+    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS'
   };
+
+  config.session = {
+    key: 'SESSION_ID',  // 设置session cookie里面的key
+    maxAge: 1000*60*30, // 设置过期时间
+    httpOnly: true,
+    encrypt: true,
+    renew: true         // renew等于true 那么每次刷新页面的时候 session都会被延期
+  }
 
   return {
     ...config,

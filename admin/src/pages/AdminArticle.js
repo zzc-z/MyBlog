@@ -21,6 +21,7 @@ function AddArticle(props) {
   const [selectedType, setSelectType] = useState("选择类型"); //选择的文章类别
   const [typeId, setTypeId] = useState(""); // 文章type_id
 
+  //进入页面  第二参数为空代表只执行一次
   useEffect(() => {
     getTypeInfo();
   }, []);
