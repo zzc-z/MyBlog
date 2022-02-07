@@ -21,7 +21,7 @@ const detail = (props) => {
   //属性配置
   marked.setOptions({
     renderer: renderer,
-    //启动类似github样式的markedong
+    //启动类似github样式的markedon g
     gfm: true,
     pedantic: false,
     //不忽略原始标签
