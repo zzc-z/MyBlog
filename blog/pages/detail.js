@@ -11,7 +11,7 @@ import "highlight.js/styles/monokai-sublime.css";
 import Tocify from "../components/Tocify.tsx";
 import servicePath from "../config/api.js";
 
-const detail = (props) => {
+export default function detail(props) {
   const renderer = new marked.Renderer();
   const tocify = new Tocify();
   renderer.heading = function (text, level, raw) {
@@ -21,7 +21,7 @@ const detail = (props) => {
   //属性配置
   marked.setOptions({
     renderer: renderer,
-    //启动类似github样式的markedon g
+    //启动类似github样式的markedong
     gfm: true,
     pedantic: false,
     //不忽略原始标签
@@ -97,7 +97,7 @@ const detail = (props) => {
       </Row>
     </div>
   );
-};
+}
 detail.getInitialProps = async (context) => {
   console.log(context.query.id);
   let id = context.query.id;
@@ -109,5 +109,3 @@ detail.getInitialProps = async (context) => {
 
   return await promise;
 };
-
-export default detail;

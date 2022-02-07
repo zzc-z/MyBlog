@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import "../styles/components/Content.css";
-import { Row, Col, Link } from "antd";
-import Contentbody from "./Contentbody";
+import { Row, Col } from "antd";
+import Contentions from "./Contentions";
 import Card from "./card";
 import Advert from "./Advert";
 
-const Content = (contentList) => {
-  const [mylist, setMylist] = useState(contentList.contentList);
+export default function Content(contentList) {
+  const [list, setList] = useState(contentList.contentList);
   return (
     <div className="content">
       <Row className="comm-main" type="flex" justify="center">
         <Col className="comm-left" xs={24} sm={24} md={16} lg={18} xl={14}>
-          {mylist.data.map((item, index) => (
-            <Contentbody
-              key={index+item}
+          {list.data.map((item, index) => (
+            <Contentions
+              key={index + item}
               id={item.id}
               title={item.title}
               introduce={item.introduce}
@@ -30,6 +30,4 @@ const Content = (contentList) => {
       </Row>
     </div>
   );
-};
-
-export default Content;
+}

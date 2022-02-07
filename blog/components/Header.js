@@ -1,11 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../styles/components/header.css";
 import { Row, Col, Menu, Icon } from "antd";
-import Link from "next/Link";
 
-const { SubMenu } = Menu;
-
-const Header = () => {
+export default function Header() {
   return (
     <div className="header">
       <Row align="middle">
@@ -38,6 +35,4 @@ const Header = () => {
       </Row>
     </div>
   );
-};
-
-export default Header;
+}
