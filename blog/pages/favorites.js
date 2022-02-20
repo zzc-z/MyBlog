@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import axios from "axios";
 import Content from "../components/Content";
 import Footer from "../components/Footer";
@@ -10,11 +10,11 @@ const index = (contentList) => {
     <div>
       <Header />
       {/* <Content contentList={contentList} /> */}
-      <ul style={{marginTop:"150px"}}>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
-          <li>列表</li>
+      <ul style={{ marginTop: "150px" }}>
+        <li>列表</li>
+        <li>列表</li>
+        <li>列表</li>
+        <li>列表</li>
       </ul>
       <Footer />
     </div>
